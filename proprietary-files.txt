@@ -75,51 +75,6 @@ my_product/lib64/libHdrTransform-platform-jni.so:system_ext/lib64/libHdrTransfor
 my_product/lib64/libjni_burstpmk.so:system_ext/lib64/libjni_burstpmk.so
 
 # Sensor calibration bins — aston OP12R (CPH2585)
-vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n36.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n37.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n38.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n39.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n40.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n46.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n47.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n48.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n49.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n52.bin
-vendor/lib/rfsa/adsp/bm3a68v08s11n53.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n02.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n03.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n04.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n06.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n07.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n08.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n09.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n12.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n13.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n14.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n15.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n16.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n17.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n18.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n19.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n20.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n21.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n22.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n23.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n24.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n25.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n26.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n27.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n28.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n41.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n42.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n43.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n44.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n45.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n50.bin
-vendor/lib/rfsa/adsp/bm3a73v08s11n51.bin
 
 # Sensor OIS config
 odm/etc/sensor/config/aston_qrd_ois_system.json
@@ -139,9 +94,7 @@ system/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so:system_ext/lib64/vend
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 
 # Revert "dodge: De-blob oplus interfaces"
-odm/lib64/vendor.oplus.hardware.camera.aon-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so
-vendor/lib64/vendor.oplus.hardware.camera_rfi-V3-ndk.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vendor
