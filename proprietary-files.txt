@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Oneplus 13 (OxygenOS 16 CPH2653_16.0.3.501(EX01))
+## are from Oneplus 12R (OxygenOS 15 ...)
 
 # Camera
 my_product/app/OplusCamera/OplusCamera.apk:system_ext/priv-app/OplusCamera/OplusCamera.apk;OVERRIDES=Camera2,GoogleCameraGo
