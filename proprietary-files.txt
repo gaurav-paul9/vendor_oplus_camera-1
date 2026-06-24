@@ -1,94 +1,176 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from Oneplus 12R (OxygenOS 15 CPH2585_16.0.5.702(EX01))
 
-# Camera
+# =============================================================================
+# Camera APK and Apps
+# =============================================================================
+
+# Main OPlus Camera app (system_ext/priv-app)
 my_product/app/OplusCamera/OplusCamera.apk:system_ext/priv-app/OplusCamera/OplusCamera.apk;OVERRIDES=Camera2,GoogleCameraGo
+
+# Gallery app (system_ext/priv-app)
 my_stock/priv-app/OppoGallery2/OppoGallery2.apk:system_ext/priv-app/OppoGallery2/OppoGallery2.apk
-my_product/lib64/libAPSClient-cmd-jni.so:system_ext/lib64/libAPSClient-cmd-jni.so
-my_product/lib64/libAPSClient-jni.so:system_ext/lib64/libAPSClient-jni.so
+
+# App Platform for OPlus Camera extensions
+system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk
+
+# Extensions Service (system/app)
+system/app/ExtensionsService/ExtensionsService.apk
+
+# Engineering Camera (system_ext/app) — debug/test tool
+system_ext/app/OplusCommercialEngineerCamera/OplusCommercialEngineerCamera.apk
+
+# =============================================================================
+# JNI Libs (my_product -> system_ext)
+# =============================================================================
+
 my_product/lib64/libAncFilter_jni.so:system_ext/lib64/libAncFilter_jni.so
 my_product/lib64/libAncHumBokeh-jni.so:system_ext/lib64/libAncHumBokeh-jni.so
 my_product/lib64/libAncHumanDoubleExposure-jni.so:system_ext/lib64/libAncHumanDoubleExposure-jni.so
 my_product/lib64/libAncHumanRetain-jni_v2.so:system_ext/lib64/libAncHumanRetain-jni_v2.so
 my_product/lib64/libAncHumanSegFigureFusion-jni.so:system_ext/lib64/libAncHumanSegFigureFusion-jni.so
 my_product/lib64/libAncHumanVideo-jni.so:system_ext/lib64/libAncHumanVideo-jni.so
+my_product/lib64/libAPSClient-alog-jni.so:system_ext/lib64/libAPSClient-alog-jni.so
+my_product/lib64/libAPSClient-cmd-jni.so:system_ext/lib64/libAPSClient-cmd-jni.so
+my_product/lib64/libAPSClient-jni.so:system_ext/lib64/libAPSClient-jni.so
 my_product/lib64/libApsFaceBeautyPreviewProductJni.so:system_ext/lib64/libApsFaceBeautyPreviewProductJni.so;FIX_SONAME
+my_product/lib64/libApsSuperEISPreviewJni.so:system_ext/lib64/libApsSuperEISPreviewJni.so
+my_product/lib64/libarcsoft_panorama_burstcapture.so:system_ext/lib64/libarcsoft_panorama_burstcapture.so
+my_product/lib64/libarcsoft_wideselfie.so:system_ext/lib64/libarcsoft_wideselfie.so
 my_product/lib64/libAvatarEngineRender.so:system_ext/lib64/libAvatarEngineRender.so
 my_product/lib64/libAvatarEngineRenderNative.so:system_ext/lib64/libAvatarEngineRenderNative.so
 my_product/lib64/libCombineLut.so:system_ext/lib64/libCombineLut.so
 my_product/lib64/libCombineLutJni.so:system_ext/lib64/libCombineLutJni.so
 my_product/lib64/libFileExtender-jni.so:system_ext/lib64/libFileExtender-jni.so
-my_product/lib64/libOplusBlurPreviewJNI.so:system_ext/lib64/libOplusBlurPreviewJNI.so
-my_product/lib64/libOplusStringJNI.so:system_ext/lib64/libOplusStringJNI.so
-system_ext/lib64/libOplusStringJNI-extension.oplus.so
-system_ext/lib64/libsuperNight.oplus.so
-system_ext/lib64/libAPSClient-cmd-jni-extension.oplus.so;FIX_SONAME
-system_ext/lib64/libapssuspend-jni.oplus.so
-system_ext/lib64/libbinauralrenderer_wrapper.qti.so
-system_ext/lib64/libhoaeffects.qti.so
-system_ext/lib64/libsatellite_audio_jni.oplus.so
-system_ext/lib64/libortc_so.oplus.so
-system_ext/lib64/libsoundtouch.oplus.so;FIX_SONAME
-system_ext/lib64/libsoundtouch_jni.oplus.so;FIX_SONAME
-system_ext/lib64/libhoaeffects_csim.so
-system_ext/lib64/libvr_amb_engine.so
-my_product/lib64/libSuperTextWrapper.so:system_ext/lib64/libSuperTextWrapper.so;MODULE_SUFFIX=_system_ext
-my_product/lib64/libXDocProcessSDK-jni.so:system_ext/lib64/libXDocProcessSDK-jni.so
-my_product/lib64/libXDocProcessSDK.so:system_ext/lib64/libXDocProcessSDK.so;MODULE_SUFFIX=_system_ext
-my_product/lib64/libYTCommon.so:system_ext/lib64/libYTCommon.so;MODULE_SUFFIX=_system_ext
-my_product/lib64/libarcsoft_wideselfie.so:system_ext/lib64/libarcsoft_wideselfie.so
-my_product/lib64/libextendfile.so:system_ext/lib64/libextendfile.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libHdrTransform-platform-jni.so:system_ext/lib64/libHdrTransform-platform-jni.so
+my_product/lib64/libjni_burstpmk.so:system_ext/lib64/libjni_burstpmk.so
 my_product/lib64/libjni_wideselfie.so:system_ext/lib64/libjni_wideselfie.so
 my_product/lib64/libjnisingleblur_api.so:system_ext/lib64/libjnisingleblur_api.so;FIX_SONAME
 my_product/lib64/libjnistblur_api.so:system_ext/lib64/libjnistblur_api.so;FIX_SONAME
-my_product/lib64/libmpbase.so:system_ext/lib64/libmpbase.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/liblivephoto.frc.jni.so:system_ext/lib64/liblivephoto.frc.jni.so
+my_product/lib64/libMsEffectSdk.so:system_ext/lib64/libMsEffectSdk.so
+my_product/lib64/libOplusBlurPreviewJNI.so:system_ext/lib64/libOplusBlurPreviewJNI.so
+my_product/lib64/libOplusStringJNI.so:system_ext/lib64/libOplusStringJNI.so
 my_product/lib64/libsingle_camera_bokeh_native.so:system_ext/lib64/libsingle_camera_bokeh_native.so
 my_product/lib64/libsingle_camera_bokeh2_native.so:system_ext/lib64/libsingle_camera_bokeh2_native.so
 my_product/lib64/libst_mobile.so:system_ext/lib64/libst_mobile.so
 my_product/lib64/libst_sticker_jni.so:system_ext/lib64/libst_sticker_jni.so;FIX_SONAME
+my_product/lib64/libXDocProcessSDK-jni.so:system_ext/lib64/libXDocProcessSDK-jni.so
+my_product/lib64/libXDocProcessSDK.so:system_ext/lib64/libXDocProcessSDK.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libSuperTextWrapper.so:system_ext/lib64/libSuperTextWrapper.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libYTCommon.so:system_ext/lib64/libYTCommon.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libextendfile.so:system_ext/lib64/libextendfile.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libmpbase.so:system_ext/lib64/libmpbase.so;MODULE_SUFFIX=_system_ext
 
-odm/lib64/libOplusSecurity.so
+# =============================================================================
+# System Ext Libs (64-bit)
+# =============================================================================
 
-my_product/lib64/libAPSClient-alog-jni.so:system_ext/lib64/libAPSClient-alog-jni.so
+system_ext/lib64/libAPSClient-cmd-jni-extension.oplus.so;FIX_SONAME
+system_ext/lib64/libapssuspend-jni.oplus.so
+system_ext/lib64/libbinauralrenderer_wrapper.qti.so
+system_ext/lib64/libbsproxy.so
+system_ext/lib64/libcsextimpl.so
+system_ext/lib64/libHeifEncoderWrapper.so
+system_ext/lib64/libhoaeffects.qti.so
+system_ext/lib64/libhoaeffects_csim.so
+system_ext/lib64/libimscamera_jni.so
+system_ext/lib64/libNativeWinBuffExchange.so
+system_ext/lib64/libOplusStringJNI-extension.oplus.so
+system_ext/lib64/libOplusVirtualCamera.so
+system_ext/lib64/liboplusheifwriter.so
+system_ext/lib64/liboplushwui_jni.so
+system_ext/lib64/liboplus-uah-client.so;MODULE_SUFFIX=_system_ext
+system_ext/lib64/libortc_so.oplus.so
+system_ext/lib64/libpenguin.so:vendor/lib64/libpenguin.so
+system_ext/lib64/libsatellite_audio_jni.oplus.so
+system_ext/lib64/libsoundtouch.oplus.so;FIX_SONAME
+system_ext/lib64/libsoundtouch_jni.oplus.so;FIX_SONAME
+system_ext/lib64/libsuperNight.oplus.so
+system_ext/lib64/libvr_amb_engine.so
+system_ext/lib64/vendor.oplus.hardware.camera.slogan@1.0.so
+system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
+system_ext/lib64/vendor.oplus.hardware.engcamera@1.0.so
+system_ext/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
+system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
+
+# =============================================================================
+# System Ext Libs (32-bit)
+# =============================================================================
+
+system_ext/lib/libimscamera_jni.so
+system_ext/lib/libOplusVirtualCamera.so
+system_ext/lib/vendor.oplus.hardware.cameraMDM@1.0.so
+system_ext/lib/vendor.oplus.hardware.camera.slogan@1.0.so
+system_ext/lib/vendor.oplus.hardware.engcamera@1.0.so
+system_ext/lib/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
+
+# =============================================================================
+# System Ext Bin/Config
+# =============================================================================
+
+system_ext/bin/cameralog_manager.sh
+system_ext/etc/sys_camera_optimize_config.xml
+
+# =============================================================================
+# System Ext Framework (camera extensions)
+# =============================================================================
+
+system_ext/framework/androidx.camera.extensions.impl.jar
+
+# =============================================================================
+# System Ext Permissions & Overlays
+# =============================================================================
+
 my_product/product_overlay/etc/permissions/oplus_camera_default_grant_permissions_list.xml:system_ext/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml
 my_product/product_overlay/framework/com.oplus.camera.unit.sdk.adapter.jar:system_ext/framework/com.oplus.camera.unit.sdk.adapter.jar
 my_product/product_overlay/framework/com.oplus.camera.unit.sdk.jar:system_ext/framework/com.oplus.camera.unit.sdk.jar
-system_ext/lib64/libpenguin.so:vendor/lib64/libpenguin.so
-system_ext/lib64/libHeifEncoderWrapper.so
-system_ext/lib64/libNativeWinBuffExchange.so
-system_ext/lib64/liboplusheifwriter.so
-system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk
 
-my_product/lib64/libApsSuperEISPreviewJni.so:system_ext/lib64/libApsSuperEISPreviewJni.so
-my_product/lib64/libMsEffectSdk.so:system_ext/lib64/libMsEffectSdk.so
-# not present in this OOS build: liblivephoto.frc.jni.so, libfusioninterpolation.arcsoft.so
+# =============================================================================
+# System Partition Camera Libs
+# =============================================================================
 
+# 64-bit
 system/lib64/vendor.oplus.hardware.cameraextension@1.0.so
 system/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
-system_ext/lib64/libbsproxy.so
-system_ext/lib64/liboplus-uah-client.so;MODULE_SUFFIX=_system_ext
-system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
+system/lib64/vendor.oplus.hardware.virtual_device.camera.manager-V1-ndk.so
 
-# Aston-specific extra my_product libs (present on aston but not dodge)
-my_product/lib64/libarcsoft_panorama_burstcapture.so:system_ext/lib64/libarcsoft_panorama_burstcapture.so
-my_product/lib64/libHdrTransform-platform-jni.so:system_ext/lib64/libHdrTransform-platform-jni.so
-my_product/lib64/libjni_burstpmk.so:system_ext/lib64/libjni_burstpmk.so
+# 32-bit
+system/lib/vendor.oplus.hardware.cameraextension@1.0.so
+system/lib/vendor.oplus.hardware.cameraextension-V1-ndk.so
+system/lib/vendor.oplus.hardware.virtual_device.camera.manager-V1-ndk.so
 
-# Sensor calibration bins — aston OP12R (CPH2585)
+# =============================================================================
+# System Permissions
+# =============================================================================
 
-# Sensor OIS config
-odm/etc/sensor/config/aston_qrd_ois_system.json
-
-odm/etc/camera/license_release_fdc.lic
-
-system/app/ExtensionsService/ExtensionsService.apk
 system/etc/permissions/privapp-permissions-oplus.xml
 
-my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_config
-system_ext/lib64/liboplushwui_jni.so
+# =============================================================================
+# Vendor Partition — OPlus Camera Services
+# =============================================================================
 
-system_ext/lib64/libcsextimpl.so
-system/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so:system_ext/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so;MODULE_SUFFIX=_system_ext
-
-# Oplus Camera Services & AI (OSense)
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
+
+# =============================================================================
+# ODM Partition — Camera-Auxiliary Files
+# (Main ODM camera files are in device/oneplus/aston/proprietary-files.txt)
+# =============================================================================
+
+odm/etc/sensor/config/aston_qrd_ois_system.json
+odm/etc/camera/license_release_fdc.lic
+odm/lib64/libOplusSecurity.so
+
+# =============================================================================
+# Product Partition
+# =============================================================================
+
+my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_config
+
+# =============================================================================
+# System Libs with partition remapping
+# =============================================================================
+
+system/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so:system_ext/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so;MODULE_SUFFIX=_system_ext
