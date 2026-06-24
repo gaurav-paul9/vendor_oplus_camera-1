@@ -151,7 +151,6 @@ system/etc/permissions/privapp-permissions-oplus.xml
 # =============================================================================
 
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
 vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
 
 # =============================================================================
